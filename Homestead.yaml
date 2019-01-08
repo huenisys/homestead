@@ -16,6 +16,26 @@ folders:
     to: /home/vagrant/packages
 
 sites:
+  - map: paolo.local
+    to: /home/vagrant/sites/paolo/public
+    params:
+      - key: APP_ENV
+        value: local
+  - map: paolo.hs
+    to: /home/vagrant/hs-sites/paolo.hs/current/public
+    params:
+      - key: APP_ENV
+        value: homestead
+  - map: bloom.local
+    to: /home/vagrant/sites/bloom/public
+    params:
+      - key: APP_ENV
+        value: local
+  - map: bloom.hs
+    to: /home/vagrant/hs-sites/bloom.hs/current/public
+    params:
+      - key: APP_ENV
+        value: homestead
   - map: test-laravel.local
     to: /home/vagrant/sites/test-laravel/public
     params:
