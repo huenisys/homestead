@@ -70,6 +70,7 @@ databases:
   - test-laravel
   - serene
   - huenits
+  - paolo
 
 # ports:
 #     - send: 50000
