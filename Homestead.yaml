@@ -61,6 +61,10 @@ sites:
     params:
       - key: APP_ENV
         value: homestead
+  - map: pc-blog.local
+    to: /home/vagrant/sites/pc-blog
+  - map: blog.paoloumali.hs
+    to: /home/vagrant/hs-sites/blog.paoloumali.hs/current
 
 name: homestead
 
@@ -71,6 +75,7 @@ databases:
   - serene
   - huenits
   - paolo
+  - pc_blog
 
 # ports:
 #     - send: 50000
