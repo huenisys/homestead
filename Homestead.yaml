@@ -16,6 +16,16 @@ folders:
     to: /home/vagrant/packages
 
 sites:
+  - map: wordpress.huenits.test
+    to: /home/vagrant/sites/huenits/wordpress/public
+    params:
+      - key: APP_ENV
+        value: local
+  - map: wordpress.huenits.hs
+    to: /home/vagrant/hs-sites/wordpress.huenits.hs/current/public
+    params:
+      - key: APP_ENV
+        value: hs
   - map: paolo.local
     to: /home/vagrant/sites/paolo/public
     params:
@@ -76,6 +86,9 @@ databases:
   - huenits
   - paolo
   - pc_blog
+  - huenits_wp
+  - huenits_wp_test
+  - huenits_wp_stage
 
 # ports:
 #     - send: 50000
